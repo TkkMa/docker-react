@@ -23,8 +23,8 @@ jobs:
           aws_secret_key: ${{ secrets.AWS_SECRET_KEY }}
           application_name: frontend
           environment_name: Frontend-env
-          existing_bucket_name: elasticbeanstalk-ap-southeast-1-654654541752
-          region: ap-southeast-1
-          version_label: 12345
+          existing_bucket_name: elasticbeanstalk-ap-northeast-2-654654541752
+          region: ap-northeast-2
+          version_label: ${{ git.sha }}
           deployment_package: deploy.zip
           use_existing_version_if_available : "true"
